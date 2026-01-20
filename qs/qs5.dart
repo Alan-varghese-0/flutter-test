@@ -32,6 +32,9 @@ void main(List<String> args) {
   String? input = stdin.readLineSync();
   double? r = double.tryParse(input ?? '');
   circle.radius =r!;
+  
+  print("radius =${circle.measure}");
+  print("area = ${circle.area}");
 
   stdout.write("enter the lenght of the rectangle : ");
   String? input1 = stdin.readLineSync();
@@ -42,9 +45,6 @@ void main(List<String> args) {
   String? input2 = stdin.readLineSync();
   double? w =double.tryParse(input2 ?? '');
   rect.width =w!;
-
-  print("radius =${circle.measure}");
-  print("area = ${circle.area}");
 
   print("length : ${rect.measure1} \nwidth : ${rect.measure2}");
   print("area : ${rect.area}");
